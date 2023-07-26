@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="flex justify-center items-center">
-            <img class="rounded-xl" src="https://gifdb.com/images/high/ipad-pro-editing-face-mzumt0nh1cj85pll.gif">
+            <video src="https://www.cartoonize.net/wp-content/uploads/2022/05/cartoonizer-effects.mp4?_=1" autoplay loop></video>
         </div>
         <HomePhotoEditDetails />
         <HomeEffects />

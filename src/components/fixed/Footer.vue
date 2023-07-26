@@ -58,4 +58,7 @@
     footer {
         min-height: 50vh;
     }
+    footer a {
+        font-size: 0.8rem;
+    }
 </style>
