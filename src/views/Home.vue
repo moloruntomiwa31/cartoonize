@@ -13,8 +13,9 @@
                 </div>
             </div>
             <div class="flex justify-center items-center">
-                <video src="https://www.cartoonize.net/wp-content/uploads/2022/05/cartoonizer-effects.mp4?_=1" autoplay
-                    loop></video>
+                <video loop="1" autoplay="1" preload="auto" muted playsinline>
+                    <source src="https://www.cartoonize.net/wp-content/uploads/2022/05/cartoonizer-effects.mp4?_=1" type="video/mp4">
+                </video>
             </div>
             <HomePhotoEditDetails />
             <HomeEffects />

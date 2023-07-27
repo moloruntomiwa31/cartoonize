@@ -21,21 +21,21 @@
         </div>
         </div>
         <div class="flex gap-8">
-            <div class="flex flex-col">
+            <div class="flex flex-col space-y-4">
                 <h3 class="text-xl font-medium">Product</h3>
                 <a href="" class="text-gray-300 hover:text-white">Home</a>
                 <a href="" class="text-gray-300 hover:text-white">Get Started</a>
                 <a href="" class="text-gray-300 hover:text-white">Features</a>
                 <a href="" class="text-gray-300 hover:text-white">Pricing</a>
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-col space-y-4">
                 <h3 class="text-xl font-medium">Company</h3>
                 <a href="" class="text-gray-300 hover:text-white">About Us</a>
                 <a href="" class="text-gray-300 hover:text-white">Leadership</a>
                 <a href="" class="text-gray-300 hover:text-white">Careers</a>
                 <a href="" class="text-gray-300 hover:text-white">Contact Us</a>
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-col space-y-4">
                 <h3 class="text-xl font-medium">Company</h3>
                 <a href="" class="text-gray-300 hover:text-white">Getting Started</a>
                 <a href="" class="text-gray-300 hover:text-white">Online Cartoonizer</a>

@@ -16,8 +16,9 @@
                     </div>
                 </div>
                 <div class="w-full">
-                    <video src="https://www.cartoonize.net/wp-content/uploads/2022/06/features-hero.mp4?_=1" autoplay
-                        loop></video>
+                    <video loop="1" autoplay="1" muted playsinline>
+                        <source src="https://www.cartoonize.net/wp-content/uploads/2022/06/features-hero.mp4?_=1" type="video/mp4">
+                    </video>
                 </div>
                 <div class="flex flex-col space-y-6">
                     <div class="flex justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"

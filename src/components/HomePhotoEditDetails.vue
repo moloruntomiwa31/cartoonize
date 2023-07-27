@@ -6,7 +6,7 @@
                 <p class="text-gray-500">{{ data.description }}</p>
             </div>
         </div>
-        <div class="block md:hidden border-b-2 border-x-black">
+        <div class="block md:hidden">
             <Swiper :modules="[EffectCube, Pagination]" :follow-finger="true" effect="cube" :loop="true" :grabCursor="true" :pagination="true"
        class="items-center justify-center space-y-4">
             <SwiperSlide class="rounded-2xl h-[auto] w-[auto] flex flex-col space-y-2 text-left p-6" v-for="data in photoEditingDeatils" :key="data">
