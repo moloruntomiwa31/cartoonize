@@ -56,7 +56,7 @@
 
 <style scoped>
     footer {
-        min-height: 50vh;
+        min-height: 30vh;
     }
     footer a {
         font-size: 0.8rem;
