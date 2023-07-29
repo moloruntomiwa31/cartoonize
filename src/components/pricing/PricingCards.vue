@@ -50,7 +50,7 @@ const plans = reactive([
         border: none;
     }
     .change button {
-        color: rgb(255, 136, 0);
+        color: #ff8800;
         background: transparent;
     }
 </style>

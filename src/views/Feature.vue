@@ -25,9 +25,8 @@
         </div>
         <div class="w-full bg-gray-100 p-8 h-30">
             <div class="m-w-[150px] space-y-4 text-center">
-                <h3 class="font-bold text-3xl">Ready to get started?</h3>
-                <p class="text-gray-500">Try it out – it’s free and no registration required.</p>
-                <Button class="text-white bg-orange-500 p-6 rounded-xl shadow-lg shadow-orange-500">Get Started</Button>
+                <ReadyBanner :title="`Ready to go plus?`" :text="`Get statred`"/>
+                <Button class="text-white bg-orange-500 p-6 rounded-xl shadow-lg shadow-orange-500"></Button>
             </div>
         </div>
     </div>
@@ -37,6 +36,7 @@
 import FeatureHead from "../components/feature/FeatureHead.vue";
 import FeatureCard from "../components/feature/FeatureCard.vue"
 import Button from "../components/fixed/Button.vue"
+import ReadyBanner from "../components/fixed/ReadyBanner.vue";
 import { ref } from "vue"
 
 const stockCollections = ref([

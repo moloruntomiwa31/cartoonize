@@ -1,6 +1,6 @@
 <template>
    <button>
-    <slot>Default</slot>
+    <slot>Get Started</slot>
    </button>
 </template>
 

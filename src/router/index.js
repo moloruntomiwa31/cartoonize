@@ -10,7 +10,10 @@ const router = createRouter({
         {
             path: "/",
             name: "home",
-            component: Home
+            component: Home,
+            meta: {
+                title: "Colorcinch | Home"
+            }
         },
         {
             path: "/home",
@@ -19,18 +22,30 @@ const router = createRouter({
         {
             path: "/features",
             name: "feature",
-            component: Feature
+            component: Feature,
+            meta: {
+                title: "Colorcinch | Feature"
+            }
         },
         {
             path: "/pricing",
             name: "pricing",
-            component: Pricing
+            component: Pricing,
+            meta: {
+                title: "Colorcinch | Pricing"
+            }
         },
         {
             path: "/support",
             name: "support",
-            component: Support
+            component: Support,
+            meta: {
+                title: "Colorcinch | Support"
+            }
         }
     ]
+})
+router.beforeEach((to) => {
+    document.title = to.meta?.title ?? 'Colorcinch'
 })
 export default router
