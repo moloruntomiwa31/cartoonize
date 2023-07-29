@@ -4,7 +4,7 @@
         <FeatureCard />
         <div class="w-full flex flex-col space-y-8 p-8 justify-center items-center">
             <div class="flex justify-center items-center flex-col space-y-6 text-center max-w-lg">
-                <h2 class="text-4xl font-bold">Stock libraries & collections</h2>
+                <h2 class="text-4xl font-bold md:text-5xl">Stock libraries & collections</h2>
                 <p class="text-gray-400">Get access to over 50,000 hand-picked vector graphics and icons, and 4 million
                     high-resolution stock photos.</p>
             </div>

@@ -3,6 +3,7 @@ import Home from "../views/Home.vue"
 import Feature from "../views/Feature.vue"
 import Pricing from "../views/Pricing.vue"
 import Support from "../views/Support.vue"
+import Contact from "../views/Contact.vue"
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -41,6 +42,14 @@ const router = createRouter({
             component: Support,
             meta: {
                 title: "Colorcinch | Support"
+            }
+        },
+        {
+            path: "/contact",
+            name: "contact",
+            component: Contact,
+            meta: {
+                title: "Colorcinch | Contact"
             }
         }
     ]

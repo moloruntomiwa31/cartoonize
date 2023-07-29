@@ -7,8 +7,14 @@
             </div>
         </div>
         <div class="block md:hidden">
-            <Swiper :modules="[EffectCube, Pagination]" :follow-finger="true" effect="cube" :loop="true" :grabCursor="true" :pagination="true"
-       class="items-center justify-center space-y-4">
+            <Swiper :modules="[EffectCube, Pagination, Autoplay]" :cube-effect="{
+                shadow: false
+            }"  :autoplay="{
+                delay: 2000,
+                disableOnInteractio: false
+            }"
+            effect="card" :loop="true" :grabCursor="true" :pagination="false"
+            class="items-center justify-center space-y-4">
             <SwiperSlide class="rounded-2xl h-[auto] w-[auto] flex flex-col space-y-2 text-left p-6" v-for="data in photoEditingDeatils" :key="data">
                 <img :src="data.icon" alt="" class="w-8">
                 <h4 class="text-black font-bold text-xl">{{ data.title }}</h4>
@@ -20,9 +26,10 @@
 
 <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import {EffectCube, Pagination} from "swiper/modules"
+import {EffectCube, Pagination, Autoplay} from "swiper/modules"
 import 'swiper/css/effect-cube'
 import "swiper/css/pagination"
+import "swiper/css/autoplay"
 import 'swiper/css';  
 import { reactive } from "vue"
 import icon1 from "../assets/photoEditimg/icon1.svg"

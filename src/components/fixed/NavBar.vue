@@ -12,6 +12,7 @@
             <RouterLink to="/features" active-class="active" class="hover-link">Features</RouterLink>
             <RouterLink to="/pricing" active-class="active" class="hover-link">Pricing</RouterLink>
             <RouterLink to="/support" active-class="active" class="hover-link">Support</RouterLink>
+            <RouterLink to="/contact" active-class="active" class="hover-link">Contact Us</RouterLink>
         </nav>
         <button class="md:hidden" @click="showNav = true">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
@@ -32,6 +33,7 @@
                 <RouterLink to="/features" active-class="active-mobile" class="hover-link">Features</RouterLink>
                 <RouterLink to="/pricing" active-class="active-mobile" class="hover-link">Pricing</RouterLink>
                 <RouterLink to="/support" active-class="active-mobile" class="hover-link">Support</RouterLink>
+                <RouterLink to="/contact" active-class="active-mobile" class="hover-link">Contact Us</RouterLink>
             </div>
 
             <div class="mt-12">
@@ -64,9 +66,10 @@ const showNav = ref(false)
     top: 0;
     left: 0;
     z-index: 99;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.2);
     transition: 2s ease-in-out;
     animation: slide 0.5s ease-in-out;
+    backdrop-filter: blur(10px);
 }
 .overlay {
     position: absolute;
