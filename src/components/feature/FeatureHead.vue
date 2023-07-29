@@ -21,9 +21,9 @@
                     </video>
                 </div>
                 <div class="flex flex-col space-y-6">
-                    <div class="flex justify-center"><svg class="bg-gray-100 p-2 rounded-lg shadow-lg" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                    <div class="flex justify-center"><svg class="bg-orange-500 p-2 shadow-lg rounded-lg" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
                             viewBox="0 0 15 15">
-                            <g fill="none" stroke="orange">
+                            <g fill="none" stroke="#fff">
                                 <path d="M3.5 2.5a1 1 0 1 1 0 2a1 1 0 0 1 0-2Z" />
                                 <path d="M11.5.5h-8a3 3 0 0 0 0 6h8a3 3 0 1 0 0-6Zm0 12a1 1 0 1 1 0-2a1 1 0 0 1 0 2Z" />
                                 <path d="M3.5 14.5h8a3 3 0 1 0 0-6h-8a3 3 0 0 0 0 6Z" />

@@ -4,7 +4,12 @@
 
 body {
     font-family: Poppins;
+    scroll-behavior: smooth;
 }
 main {
     background-image: url("./src/assets/animatedShape.svg");
+    background-repeat: no-repeat;
+}
+.hover-link {
+    @apply hover:text-orange-600 duration-300 ease-linear
 }

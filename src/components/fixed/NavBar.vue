@@ -8,10 +8,10 @@
             <h1 class="text-2xl">colorcinch</h1>
         </div>
         <nav class="md:block hidden justify-between items-center space-x-6">
-            <RouterLink to="/" active-class="active">Home</RouterLink>
-            <RouterLink to="/features" active-class="active">Features</RouterLink>
-            <RouterLink to="/pricing" active-class="active">Pricing</RouterLink>
-            <RouterLink to="/support" active-class="active">Support</RouterLink>
+            <RouterLink to="/" active-class="active" class="hover-link">Home</RouterLink>
+            <RouterLink to="/features" active-class="active" class="hover-link">Features</RouterLink>
+            <RouterLink to="/pricing" active-class="active" class="hover-link">Pricing</RouterLink>
+            <RouterLink to="/support" active-class="active" class="hover-link">Support</RouterLink>
         </nav>
         <button class="md:hidden" @click="showNav = true">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
@@ -28,10 +28,10 @@
             </button>
             <input type="search" class="w-full p-2 rounded-full bg-transparent border-2 border-gray-500 outline-none placeholder:text-gray-500" placeholder="Search">
             <div class="flex flex-col space-y-6">
-                <RouterLink to="/" active-class="active-mobile" class="duration-300 ease-linear hover:text-orange-500">Home</RouterLink>
-                <RouterLink to="/features" active-class="active-mobile" class="duration-300 ease-linear hover:text-orange-500">Features</RouterLink>
-                <RouterLink to="/pricing" active-class="active-mobile" class="duration-300 ease-linear hover:text-orange-500">Pricing</RouterLink>
-                <RouterLink to="/support" active-class="active-mobile" class="duration-300 ease-linear hover:text-orange-500">Support</RouterLink>
+                <RouterLink to="/" active-class="active-mobile" class="hover-link">Home</RouterLink>
+                <RouterLink to="/features" active-class="active-mobile" class="hover-link">Features</RouterLink>
+                <RouterLink to="/pricing" active-class="active-mobile" class="hover-link">Pricing</RouterLink>
+                <RouterLink to="/support" active-class="active-mobile" class="hover-link">Support</RouterLink>
             </div>
 
             <div class="mt-12">
@@ -75,7 +75,7 @@ const showNav = ref(false)
     height: 100vh;
     width: 60%;
     right: 0;
-    transition: all 3s ease-in-out linear;
+    transition: all 1s ease-in linear;
 }
 .cross {
     position: absolute;
@@ -85,7 +85,7 @@ const showNav = ref(false)
 
 @keyframes slide {
     0% {
-        transform: translateX(1000px);
+        transform: translateX(50%);
     }
     100% {
         transform: translateX(0px);
