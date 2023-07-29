@@ -25,7 +25,7 @@
         </div>
         <div class="w-full bg-gray-100 p-8 h-30">
             <div class="m-w-[150px] space-y-4 text-center">
-                <ReadyBanner :title="`Ready to go plus?`" :text="`Get statred`"/>
+                <ReadyBanner :title="`Ready to get started?`" :text="`Try it out - it's free and no registration required.`"/>
                 <Button class="text-white bg-orange-500 p-6 rounded-xl shadow-lg shadow-orange-500"></Button>
             </div>
         </div>

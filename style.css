@@ -5,3 +5,7 @@
 body {
     font-family: Poppins;
 }
+main {
+    background-image: url("./src/assets/animatedShape.svg");
+    background-repeat: no-repeat;
+}
