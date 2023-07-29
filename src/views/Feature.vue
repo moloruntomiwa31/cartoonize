@@ -1,54 +1,68 @@
 <template>
     <div>
-        <main class="flex flex-col justify-center items-center p-6 mt-12">
-            <div class="hero flex flex-col text-center space-y-10 md:w-[60%] lg:w-[60%]">
-                <h1 class="text-black font-bold text-4xl md:text-5xl">A creative tool so simple, a toddler could use it.
-                </h1>
-                <p class="text-gray-500">Our all-in-one creative platform helps you achieve professional and stunning
-                    results
-                    with less time and virtually no experience.</p>
-                <div class="md:flex justify-center hidden ">
-                    <div class="flex justify-between items-center w-full" v-for="data of featuresHero" :key="data">
-                        <div class="flex space-x-2">
-                            <img :src="icon" alt="">
-                            <h3 class="font-bold">{{ data }}</h3>
-                        </div>
-                    </div>
+        <FeatureHead />
+        <FeatureCard />
+        <div class="w-full flex flex-col space-y-8 p-8 justify-center items-center">
+            <div class="flex justify-center items-center flex-col space-y-6 text-center max-w-lg">
+                <h2 class="text-4xl font-bold">Stock libraries & collections</h2>
+                <p class="text-gray-400">Get access to over 50,000 hand-picked vector graphics and icons, and 4 million
+                    high-resolution stock photos.</p>
+            </div>
+            <div class="mx-auto flex flex-col space-y-8 justify-center items-center md:space-y-0 md:flex-row md:gap-6"
+                v-for="data in stockCollections" :key="data" :class="data.reverse ? 'md:flex-row-reverse' : ' '">
+                <div
+                    class="md:w-2/5 justify-center items-center md:justify-start md:items-start flex flex-col space-y-4 md:text-left">
+                    <h3 class="font-bold text-2xl">{{ data.title }}</h3>
+                    <p class="text-gray-400 text-center md:text-left">{{ data.description }}</p>
+                    <a class="text-orange-400 text-center border-b-2 border-orange-500 w-fit" href="">{{ data.link }}</a>
                 </div>
-                <div class="w-full">
-                    <video loop="1" autoplay="1" muted playsinline>
-                        <source src="https://www.cartoonize.net/wp-content/uploads/2022/06/features-hero.mp4?_=1" type="video/mp4">
+                <div class="md:w-1/2 flex justify-center items-center">
+                    <video loop="1" autoplay="1" playsinline muted>
+                        <source :src="data.src" type="video/mp4">
                     </video>
                 </div>
-                <div class="flex flex-col space-y-6">
-                    <div class="flex justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                            viewBox="0 0 15 15">
-                            <g fill="none" stroke="orange">
-                                <path d="M3.5 2.5a1 1 0 1 1 0 2a1 1 0 0 1 0-2Z" />
-                                <path d="M11.5.5h-8a3 3 0 0 0 0 6h8a3 3 0 1 0 0-6Zm0 12a1 1 0 1 1 0-2a1 1 0 0 1 0 2Z" />
-                                <path d="M3.5 14.5h8a3 3 0 1 0 0-6h-8a3 3 0 0 0 0 6Z" />
-                            </g>
-                        </svg>
-                    </div>
-                    <h1 class="text-black font-bold text-4xl md:text-5xl">Essential photo editing tools</h1>
-                    <p class="text-gray-500">Resize, enhance and transform – use our wide selection of essential features to
-                        customize and beautify your artwork.</p>
-                    <div><a href="" class="text-orange-500 w-fit border-b-2 border-orange-500 text-2xl font-bold">Start
-                            editing now ></a></div>
-                </div>
             </div>
-        </main>
-        <FeatureCard />
+        </div>
+        <div class="w-full bg-gray-100 p-8 h-30">
+            <div class="m-w-[150px] space-y-4 text-center">
+                <h3 class="font-bold text-3xl">Ready to get started?</h3>
+                <p class="text-gray-500">Try it out – it’s free and no registration required.</p>
+                <Button class="text-white bg-orange-500 p-6 rounded-xl shadow-lg shadow-orange-500">Get Started</Button>
+            </div>
+        </div>
     </div>
 </template>
 
 <script setup>
-import { ref } from "vue"
-import icon from "../assets/Feature/disc.svg"
+import FeatureHead from "../components/feature/FeatureHead.vue";
 import FeatureCard from "../components/feature/FeatureCard.vue"
-const featuresHero = ref(["Essential editing tools", "Effects & cartoonizers", "Graphics & stock photos"])
+import Button from "../components/fixed/Button.vue"
+import { ref } from "vue"
+
+const stockCollections = ref([
+    {
+        src: "https://www.cartoonize.net/wp-content/uploads/2022/06/photos.mp4?_=1",
+        title: "Over 4 million stock photos",
+        description: "Explore an incredible collection of high resolution stock photos available for personal and commercial use.",
+        link: "Explore stock photos    >",
+        reverse: false
+    },
+    {
+        src: "https://www.cartoonize.net/wp-content/uploads/2022/06/graphics.mp4?_=1",
+        title: "Over 50,000 vector graphics & icons",
+        description: "Explore an incredible collection of high resolution stock photos available for personal and commercial use.",
+        link: "Explore graphics & icons    >",
+        reverse: true
+    },
+    {
+        src: "https://www.cartoonize.net/wp-content/uploads/2022/06/masks.mp4?_=1",
+        title: "Hundreds of masks & frames",
+        description: "Explore an incredible collection of high resolution stock photos available for personal and commercial use.",
+        link: "Explore our collections    >",
+        reverse: false
+    },
+])
 </script>
 
-<style  scoped>.hero {
-    min-height: 100vh;
-}</style>
+<style  scoped>
+</style>

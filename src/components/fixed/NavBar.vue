@@ -11,7 +11,7 @@
             <RouterLink to="/" active-class="active">Home</RouterLink>
             <RouterLink to="/features" active-class="active">Features</RouterLink>
             <RouterLink to="/pricing" active-class="active">Pricing</RouterLink>
-            <RouterLink to="/learn" active-class="active">Learn</RouterLink>
+            <RouterLink to="/support" active-class="active">Support</RouterLink>
         </nav>
         <button class="md:hidden" @click="showNav = true">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
@@ -31,7 +31,7 @@
                 <RouterLink to="/" active-class="active-mobile" class="duration-300 ease-linear hover:text-orange-500">Home</RouterLink>
                 <RouterLink to="/features" active-class="active-mobile" class="duration-300 ease-linear hover:text-orange-500">Features</RouterLink>
                 <RouterLink to="/pricing" active-class="active-mobile" class="duration-300 ease-linear hover:text-orange-500">Pricing</RouterLink>
-                <RouterLink to="/learn" active-class="active-mobile" class="duration-300 ease-linear hover:text-orange-500">Learn</RouterLink>
+                <RouterLink to="/support" active-class="active-mobile" class="duration-300 ease-linear hover:text-orange-500">Support</RouterLink>
             </div>
 
             <div class="mt-12">

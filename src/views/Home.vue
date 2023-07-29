@@ -8,8 +8,7 @@
                     photo
                     editor & AI cartoonizer designed to be simple, beautiful, and free</p>
                 <div class="flex justify-center">
-                    <button class="text-white bg-orange-500 p-6 rounded-xl shadow-lg shadow-orange-500">Upload
-                        Photos</button>
+                    <Button class="text-white bg-orange-500 p-6 rounded-xl shadow-lg shadow-orange-500">Upload Photos</Button>
                 </div>
             </div>
             <div class="flex justify-center items-center">
@@ -29,6 +28,7 @@
 import HomePhotoEditDetails from "../components/HomePhotoEditDetails.vue"
 import HomeEffects from "../components/HomeEffects.vue"
 import HomeBanner from "../components/HomeBanner.vue"
+import Button from "../components/fixed/Button.vue"
 </script>
 
 <style scoped></style>

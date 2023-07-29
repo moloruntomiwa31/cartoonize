@@ -1,6 +1,6 @@
 <template>
     <section class="flex justify-center items-center">
-        <div class="grid grid-cols-1 place-items-center gap-4 md:grid-cols-3 rounded-xl  my-5 md:flex-row">
+        <div class="grid grid-cols-1 place-items-center gap-4 md:grid-cols-2 lg:grid-cols-3 rounded-xl  my-5 md:flex-row">
             <div class=" w-[300px] my-5 shadow-xl hover:translate-y-4 duration-200 hover:cursor-pointer" v-for="data in editFeature" :key="data">
                 <img :src="data.icon" alt="" class="rounded-t-xl">
                 <div class="text-center space-y-4 p-8">

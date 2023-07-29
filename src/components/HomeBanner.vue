@@ -5,7 +5,7 @@
                 <h2 class="text-3xl font-bold">Start editing with ease.</h2>
                 <p class="text-gray-600">No sign up required, no experience neede!</p>
                 <div class="flex justify-center">
-                    <button class="bg-gray-200 p-4 rounded-lg shadow-2xl">Get Started</button>
+                    <Button class="bg-gray-200 p-4 rounded-lg shadow-2xl">Get Started</Button>
                 </div>
             </div>
         </div>
@@ -13,7 +13,7 @@
 </template>
 
 <script setup>
-
+import Button from "../components/fixed/Button.vue"
 </script>
 
 <style scoped>
