@@ -21,7 +21,7 @@
                     </video>
                 </div>
                 <div class="flex flex-col space-y-6">
-                    <div class="flex justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                    <div class="flex justify-center"><svg class="bg-gray-100 p-2 rounded-lg shadow-lg" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
                             viewBox="0 0 15 15">
                             <g fill="none" stroke="orange">
                                 <path d="M3.5 2.5a1 1 0 1 1 0 2a1 1 0 0 1 0-2Z" />

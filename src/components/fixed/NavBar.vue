@@ -75,7 +75,7 @@ const showNav = ref(false)
     height: 100vh;
     width: 60%;
     right: 0;
-    transition: all 2s ease-in-out 0.7s;
+    transition: all 3s ease-in-out linear;
 }
 .cross {
     position: absolute;
@@ -85,7 +85,7 @@ const showNav = ref(false)
 
 @keyframes slide {
     0% {
-        transform: translateX(20px);
+        transform: translateX(1000px);
     }
     100% {
         transform: translateX(0px);
