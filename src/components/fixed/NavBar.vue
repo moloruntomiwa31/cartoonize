@@ -67,8 +67,7 @@ const showNav = ref(false)
     left: 0;
     z-index: 99;
     background-color: rgba(0, 0, 0, 0.2);
-    transition: 2s ease-in-out;
-    animation: slide 0.5s ease-in-out;
+    animation: slide 1s ease-in-out;
     backdrop-filter: blur(10px);
 }
 .overlay {
@@ -78,7 +77,7 @@ const showNav = ref(false)
     height: 100vh;
     width: 60%;
     right: 0;
-    transition: all 1s ease-in linear;
+    transition: all 0.5s ease-in-out linear;
 }
 .cross {
     position: absolute;
@@ -88,10 +87,10 @@ const showNav = ref(false)
 
 @keyframes slide {
     0% {
-        transform: translateX(50%);
+        transform: translateX(100%);
     }
     100% {
-        transform: translateX(0px);
+        transform: translateX(0);
     }
 }
 </style>

@@ -11,9 +11,9 @@
             <div class="mx-auto flex flex-col space-y-8 justify-center items-center md:space-y-0 md:flex-row md:gap-6"
                 v-for="data in stockCollections" :key="data" :class="data.reverse ? 'md:flex-row-reverse' : ' '">
                 <div
-                    class="md:w-2/5 justify-center items-center md:justify-start md:items-start flex flex-col space-y-4 md:text-left">
+                    class="md:w-2/5 justify-center text-center items-center md:justify-start md:items-start flex flex-col space-y-4 md:text-left">
                     <h3 class="font-bold text-2xl">{{ data.title }}</h3>
-                    <p class="text-gray-400 text-center md:text-left">{{ data.description }}</p>
+                    <p class="text-gray-400">{{ data.description }}</p>
                     <a class="text-orange-400 text-center border-b-2 border-orange-500 w-fit" href="">{{ data.link }}</a>
                 </div>
                 <div class="md:w-1/2 flex justify-center items-center">

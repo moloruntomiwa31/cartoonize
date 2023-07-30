@@ -1,11 +1,11 @@
 <template>
     <div class="flex flex-col space-y-6 justify-center md:flex-row md:gap-6 md:space-y-0 p-6">
-        <div class="flex flex-col space-y-10 md:w-[65%]">
+        <div class="flex flex-col space-y-10 md:mb-32 md:w-[65%]">
             <Modal />
             <div class="flex flex-col space-y-2 md:max-w-[80%]">
                 <h1 class="font-bold text-4xl md:text-5xl">Contact customer support</h1>
                 <p class="text-gray-400">
-                    Have a presale question? Can’t find an answer to a technical question? We’re here to help!
+                    Have a presale question? Can't find an answer to a technical question? We're here to help!
                 </p>
             </div>
             <form action="" class="space-y-6">
@@ -16,6 +16,10 @@
                 <div class="grid grid-cols-1 space-y-6 md:grid-cols-2 md:space-y-0">
                     <Input :label="`email`" type="email"/>
                     <Input :label="`subject`"/>
+                </div>
+                <div class="relative">
+                    <textarea cols="30" rows="5" class="focus:outline-none border-b-2 border-gray-400 w-[80%] md:w-[40%] resize-none" placeholder=" "></textarea>
+                    <label for="" class="text-sm uppercase font-bold absolute top-0  h-full flex items-center duration-300 ease-linear">Your message</label>
                 </div>
                 <Button class="bg-orange-500 px-6 py-4 rounded-full text-white shadow-orange-500 shadow-md">Send Message</Button>
             </form>
@@ -37,5 +41,8 @@ import Button from "../components/fixed/Button.vue"
 </script>
 
 <style scoped>
-
+textarea:focus+label, 
+textarea:not(:placeholder-shown) + label  {
+    transform: translateY(-50%);
+}
 </style>
