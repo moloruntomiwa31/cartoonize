@@ -5,8 +5,8 @@
             <div class="flex flex-col justify-center items-center space-y-8">
                 <h1 class="text-white font-bold text-4xl text-center md:text-5xl">Hi. How can we help?</h1>
                 <div class="w-full flex justify-center">
-                    <div class="w-[80%] flex justify-center items-center gap-2 max-w-[50%]">
-                        <input type="text" class="rounded-[44px] h-[44px] pr-[40%] outline-orange-600 px-4"
+                    <div class="flex justify-center items-center gap-2 max-w-[80%]">
+                        <input type="text" class="rounded-[44px] h-[44px] outline-orange-600 p-4 border-none max-w-[640px] w-[100%]"
                             placeholder="Search..">
                         <input type="submit" value="Search" class="flex justify-center items-center md:leading-[10px] bg-orange-500 rounded-[44px] h-[40px] w-[40%] text-white md:right-[6rem] md:w-[25%] cursor-pointer px-2">
                     </div>
