@@ -19,7 +19,9 @@
                 <p class="text-gray-600">All graphics collections</p>
                 <p class="text-gray-600">Unlimited Projects</p>
             </div>
-            <Button class="uppercase font-bold bg-orange-500 rounded-lg text-white p-4">Upgrade Now</Button>
+            <Button 
+            class="uppercase font-bold bg-orange-500 rounded-lg text-white p-4" 
+            @click="router.push({query: {plan: data.plan}})">Upgrade Now</Button>
         </div>
     </div>
 </template>
@@ -27,18 +29,29 @@
 <script setup>
 import Button from "../fixed/Button.vue"
 import {reactive} from "vue"
+import {useRouter} from "vue-router"
+const router = useRouter()
 const plans = reactive([
     {
+        plan: "annaul",
         planName: "Annaul Plan",
         billing: "Billied annaully at $59.88",
         monthlyCharge: 4
     },
     {
+        plan: "monthly",
         planName: "Monthly Plan",
         billing: "Billied monthly at $8.99",
         monthlyCharge: 8
     },
 ])
+// const upgradeNow = () => {
+//     router.push({
+//         query: {
+//             plan: data.plan
+//         }
+//     })
+// }
 </script>
 
 <style scoped>

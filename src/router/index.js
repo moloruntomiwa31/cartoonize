@@ -4,6 +4,8 @@ import Feature from "../views/Feature.vue"
 import Pricing from "../views/Pricing.vue"
 import Support from "../views/Support.vue"
 import Contact from "../views/Contact.vue"
+import FeatureCard from "../views/FeatureCard.vue"
+import NotFound from "../views/NotFound.vue"
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -24,6 +26,14 @@ const router = createRouter({
             path: "/features",
             name: "feature",
             component: Feature,
+            meta: {
+                title: "Colorcinch | Feature"
+            }
+        },
+        {
+            path: "/features/edittools/:id",
+            name: "featurecard",
+            component: FeatureCard,
             meta: {
                 title: "Colorcinch | Feature"
             }
@@ -51,6 +61,10 @@ const router = createRouter({
             meta: {
                 title: "Colorcinch | Contact"
             }
+        },
+        {
+            path: '/:catchAll(.*)', 
+            component: NotFound,
         }
     ]
 })

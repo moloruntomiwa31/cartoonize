@@ -8,21 +8,30 @@
                     Have a presale question? Can't find an answer to a technical question? We're here to help!
                 </p>
             </div>
-            <form action="" class="space-y-6">
+            <div action="" class="space-y-6">
                 <div class="grid grid-cols-1 space-y-6 md:grid-cols-2 md:space-y-0">
-                    <Input :label="`full name*`"/>
-                    <Input :label="`order id`" type="number"/>
+                    <Input :label="`full name*`" v-model="state.firstName" />
+                    <span v-if="v$.firstName.$error">
+                            {{ v$.firstName.$errors[0].$message }}
+                    </span>
+                    <Input :label="`order id`" type="number" v-model="state.orderId" />
+                    {{ orderId }}
                 </div>
                 <div class="grid grid-cols-1 space-y-6 md:grid-cols-2 md:space-y-0">
-                    <Input :label="`email`" type="email"/>
-                    <Input :label="`subject`"/>
+                    <Input :label="`email`" type="email" v-model="state.email" />
+                    <Input :label="`subject`" v-model="state.subject" />
                 </div>
                 <div class="relative">
-                    <textarea cols="30" rows="5" class="focus:outline-none border-b-2 border-gray-400 w-[80%] md:w-[40%] resize-none" placeholder=" "></textarea>
-                    <label for="" class="text-sm uppercase font-bold absolute top-0  h-full flex items-center duration-300 ease-linear">Your message</label>
+                    <textarea cols="30" rows="5"
+                        class="focus:outline-none border-b-2 border-gray-400 w-[80%] md:w-[40%] resize-none"
+                        placeholder=" "></textarea>
+                    <label for=""
+                        class="text-sm uppercase font-bold absolute top-0  h-full flex items-center duration-300 ease-linear">Your
+                        message</label>
                 </div>
-                <Button class="bg-orange-500 px-6 py-4 rounded-full text-white shadow-orange-500 shadow-md">Send Message</Button>
-            </form>
+                <Button class="bg-orange-500 px-6 py-4 rounded-full text-white shadow-orange-500 shadow-md" @click="handleSubmit">Send
+                    Message</Button>
+                </div>
         </div>
         <div class="flex flex-col space-y-4 md:w-[35%]">
             <h3 class="font-bold text-2xl">Seeking partnership opportunities?</h3>
@@ -38,11 +47,37 @@
 import Modal from '../components/contact/Modal.vue';
 import Input from "../components/fixed/Input.vue"
 import Button from "../components/fixed/Button.vue"
+import { useVuelidate } from '@vuelidate/core'
+import { required, email } from '@vuelidate/validators'
+import { reactive, computed } from "vue"
+const state = reactive({
+    firstName: " ",
+    orderId: null,
+    subject: " ",
+    email: " "
+})
+const rules = computed(() => {
+    return {
+        email: {required, email},
+        firstName: {required},
+        orderId: {required},
+        subject: {required}
+    }
+})
+const v$ = useVuelidate(rules, state)
+const handleSubmit = (e) => {
+    e.preventDefault()
+    if (!v$.$error) {
+        alert("success");
+    }else {
+        alert("failed")
+    }
+}
 </script>
 
 <style scoped>
-textarea:focus+label, 
-textarea:not(:placeholder-shown) + label  {
+textarea:focus+label,
+textarea:not(:placeholder-shown)+label {
     transform: translateY(-50%);
 }
 </style>
