@@ -11,7 +11,7 @@
                 shadow: false
             }"  :autoplay="{
                 delay: 2000,
-                disableOnInteractio: false
+                disableOnInteraction: false
             }"
             effect="card" :loop="true" :grabCursor="true" :pagination="false"
             class="items-center justify-center space-y-4">
@@ -59,11 +59,12 @@ const photoEditingDeatils = reactive([
 .swiper {
     width: 300px;
     height: 300px;
-    overflow: visible;
+    overflow: hidden;
 }
 .swiper div {
-    width: 80%;
+    width: 100%;
     height: 80%;
+    overflow: hidden;
 }
 .swiper-pagination-bullet-active {
     background: rgb(255, 106, 0);

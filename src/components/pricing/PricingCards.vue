@@ -43,7 +43,7 @@ const plans = reactive([
         planName: "Monthly Plan",
         billing: "Billied monthly at $8.99",
         monthlyCharge: 8
-    },
+    }
 ])
 // const upgradeNow = () => {
 //     router.push({

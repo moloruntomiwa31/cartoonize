@@ -16,9 +16,7 @@
                     </div>
                 </div>
                 <div class="w-full">
-                    <video loop="1" autoplay="1" muted playsinline>
-                        <source src="https://www.cartoonize.net/wp-content/uploads/2022/06/features-hero.mp4?_=1" type="video/mp4">
-                    </video>
+                    <img src="https://i.pinimg.com/originals/b1/e0/d7/b1e0d7e2fef2b58b87917185ae960c9d.gif" alt="" class="rounded-md">
                 </div>
                 <div class="flex flex-col space-y-6">
                     <div class="flex justify-center"><svg class="bg-orange-500 p-2 shadow-lg rounded-lg" xmlns="http://www.w3.org/2000/svg" width="50" height="50"

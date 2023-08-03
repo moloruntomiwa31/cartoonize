@@ -5,10 +5,11 @@
 body {
     font-family: Poppins;
     scroll-behavior: smooth;
+    min-width: 100%;
+    min-height: 100vh;
 }
 main {
     background-image: url("./src/assets/animatedShape.svg");
-    background-repeat: no-repeat;
 }
 .hover-link {
     @apply hover:text-orange-600 duration-300 ease-linear

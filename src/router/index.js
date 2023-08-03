@@ -4,7 +4,7 @@ import Feature from "../views/Feature.vue"
 import Pricing from "../views/Pricing.vue"
 import Support from "../views/Support.vue"
 import Contact from "../views/Contact.vue"
-import FeatureCard from "../views/FeatureCard.vue"
+import FeatureCard from "../views/FeatureCardDetails.vue"
 import NotFound from "../views/NotFound.vue"
 
 const router = createRouter({
@@ -14,13 +14,10 @@ const router = createRouter({
             path: "/",
             name: "home",
             component: Home,
+            alias: "/home",
             meta: {
                 title: "Colorcinch | Home"
             }
-        },
-        {
-            path: "/home",
-            redirect: "/"
         },
         {
             path: "/features",

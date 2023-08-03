@@ -1,5 +1,6 @@
 <template>
-    <header class="flex justify-between items-center px-6 md:px-20 py-6 mx-auto bg-black text-white md:text-black md:bg-transparent">
+    <header
+        class="flex justify-between items-center px-6 md:px-20 py-6 mx-auto bg-black text-white md:text-black md:bg-transparent">
         <div class="flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 256 256">
                 <path fill="#ff5e00"
@@ -23,30 +24,36 @@
     </header>
     <nav class="overlay-wrapper" v-if="showNav" @click="showNav = false">
         <div class="overlay">
-            <div class="links text-white flex flex-col h-full justify-center ml-6 mr-2 space-y-32">
-            <button class="cross bg-white rounded-full p-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 15 15"><path fill="black" fill-rule="evenodd" d="M11.782 4.032a.575.575 0 1 0-.813-.814L7.5 6.687L4.032 3.218a.575.575 0 0 0-.814.814L6.687 7.5l-3.469 3.468a.575.575 0 0 0 .814.814L7.5 8.313l3.469 3.469a.575.575 0 0 0 .813-.814L8.313 7.5l3.469-3.468Z" clip-rule="evenodd"/></svg>
-            </button>
-            <input type="search" class="w-full p-2 rounded-full bg-transparent border-2 border-gray-500 outline-none placeholder:text-gray-500" placeholder="Search">
-            <div class="flex flex-col space-y-6">
-                <RouterLink to="/" active-class="active-mobile" class="hover-link">Home</RouterLink>
-                <RouterLink to="/features" active-class="active-mobile" class="hover-link">Features</RouterLink>
-                <RouterLink to="/pricing" active-class="active-mobile" class="hover-link">Pricing</RouterLink>
-                <RouterLink to="/support" active-class="active-mobile" class="hover-link">Support</RouterLink>
-                <RouterLink to="/contact" active-class="active-mobile" class="hover-link">Contact Us</RouterLink>
-            </div>
+            <div class="links text-white flex flex-col h-full p-6 justify-center space-y-32">
+                <button class="cross bg-white rounded-full p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 15 15">
+                        <path fill="black" fill-rule="evenodd"
+                            d="M11.782 4.032a.575.575 0 1 0-.813-.814L7.5 6.687L4.032 3.218a.575.575 0 0 0-.814.814L6.687 7.5l-3.469 3.468a.575.575 0 0 0 .814.814L7.5 8.313l3.469 3.469a.575.575 0 0 0 .813-.814L8.313 7.5l3.469-3.468Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <input type="search"
+                    class="w-full p-2 rounded-full bg-transparent border-2 border-gray-500 outline-none placeholder:text-gray-500"
+                    placeholder="Search">
+                <div class="flex flex-col space-y-4">
+                    <RouterLink to="/" active-class="active-mobile" class="hover-link">Home</RouterLink>
+                    <RouterLink to="/features" active-class="active-mobile" class="hover-link">Features</RouterLink>
+                    <RouterLink to="/pricing" active-class="active-mobile" class="hover-link">Pricing</RouterLink>
+                    <RouterLink to="/support" active-class="active-mobile" class="hover-link">Support</RouterLink>
+                    <RouterLink to="/contact" active-class="active-mobile" class="hover-link">Contact Us</RouterLink>
+                </div>
 
-            <div class="mt-12">
-                <p>&copy;All rights reserved.</p>
+                <div class="mt-8">
+                    <p>&copy;All rights reserved.</p>
+                </div>
             </div>
-        </div>
         </div>
     </nav>
 </template>
 
 <script setup>
 import { RouterLink } from 'vue-router';
-import {ref} from "vue"
+import { ref } from "vue"
 const showNav = ref(false)
 </script>
 
@@ -56,9 +63,11 @@ const showNav = ref(false)
     width: fit-content;
     transition: all 0.3s ease-in-out;
 }
+
 .active-mobile {
     color: #fe792b;
 }
+
 .overlay-wrapper {
     position: absolute;
     width: 100%;
@@ -70,15 +79,17 @@ const showNav = ref(false)
     animation: slide 1s ease-in-out;
     backdrop-filter: blur(10px);
 }
+
 .overlay {
     position: absolute;
     top: 0;
     background-color: rgba(0, 0, 0);
     height: 100vh;
-    width: 60%;
+    width: 50%;
     right: 0;
     transition: all 0.5s ease-in-out linear;
 }
+
 .cross {
     position: absolute;
     top: 35px;
@@ -89,8 +100,8 @@ const showNav = ref(false)
     0% {
         transform: translateX(100%);
     }
+
     100% {
         transform: translateX(0);
     }
-}
-</style>
+}</style>

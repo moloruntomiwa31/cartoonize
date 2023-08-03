@@ -16,10 +16,8 @@
                     <p class="text-gray-400">{{ data.description }}</p>
                     <a class="text-orange-400 text-center border-b-2 border-orange-500 w-fit" href="">{{ data.link }}</a>
                 </div>
-                <div class="md:w-1/2 flex justify-center items-center">
-                    <video loop="1" autoplay="1" playsinline muted>
-                        <source :src="data.src" type="video/mp4">
-                    </video>
+                <div class="w-4/5 md:w-1/2 flex justify-center items-center">
+                    <img :src="data.src" alt="Image-icon" class="rounded-md">
                 </div>
             </div>
         </div>
@@ -41,21 +39,21 @@ import { ref } from "vue"
 
 const stockCollections = ref([
     {
-        src: "https://www.cartoonize.net/wp-content/uploads/2022/06/photos.mp4?_=1",
+        src: "https://i.pinimg.com/originals/0f/09/17/0f0917cab7bd5b328ecdcadd6115b6f7.gif",
         title: "Over 4 million stock photos",
         description: "Explore an incredible collection of high resolution stock photos available for personal and commercial use.",
         link: "Explore stock photos    >",
         reverse: false
     },
     {
-        src: "https://www.cartoonize.net/wp-content/uploads/2022/06/graphics.mp4?_=1",
+        src: "https://i.pinimg.com/originals/49/c6/00/49c600024ffb144052eda94fc63576b5.gif",
         title: "Over 50,000 vector graphics & icons",
         description: "Explore an incredible collection of high resolution stock photos available for personal and commercial use.",
         link: "Explore graphics & icons    >",
         reverse: true
     },
     {
-        src: "https://www.cartoonize.net/wp-content/uploads/2022/06/masks.mp4?_=1",
+        src: "https://i.pinimg.com/originals/41/5c/f0/415cf0970d8fcb55d69f25308f64f5a0.gif",
         title: "Hundreds of masks & frames",
         description: "Explore an incredible collection of high resolution stock photos available for personal and commercial use.",
         link: "Explore our collections    >",

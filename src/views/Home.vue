@@ -12,9 +12,7 @@
                 </div>
             </div>
             <div class="flex justify-center items-center">
-                <video loop="1" autoplay="1" preload="auto" muted playsinline>
-                    <source src="https://www.cartoonize.net/wp-content/uploads/2022/05/cartoonizer-effects.mp4?_=1" type="video/mp4">
-                </video>
+                <img src="https://i.pinimg.com/originals/e4/c0/dc/e4c0dc2a787b8d1e58d52ce8ec828053.gif" alt="" class="rounded-md">
             </div>
             <HomePhotoEditDetails />
             <HomeEffects />

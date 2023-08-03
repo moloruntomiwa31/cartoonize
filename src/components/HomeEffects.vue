@@ -17,21 +17,19 @@
 </template>
 
 <script setup>
-import icon1 from "../assets/moreDetails/human cartoon.jpg"
-import icon2 from "../assets/moreDetails/richPhoto.jpg"
 import icon3 from "../assets/moreDetails/graphics.jpg"
 import { ref } from "vue"
 
 const effectTab = ref([
     {
-        icon: icon1,
+        icon: "https://i.pinimg.com/originals/af/26/9a/af269aad0822299c394afb1250312169.gif",
         title: "Adjustable cartoonizer effects & filters",
         description: "Go from photo to cartoon in one click. Turn your photos into truly unique art using our cartoonizer, sketcher and hundreds of other specialty filters and effects.",
         link: "See effects & filters in action     >",
         reverse: false
     },
     {
-        icon: icon2,
+        icon: "https://i.pinimg.com/originals/87/61/cc/8761ccb8e606ef2e32098ceb64a89eaf.gif",
         title: "Feature-rich photo and text editor",
         description: "Remove background, crop and resize, adjust or replace color – use our wide selection of tools to customize and beautify your photos.",
         link: "Explore all tools & faetures     >",
